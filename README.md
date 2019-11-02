@@ -18,28 +18,28 @@ Sau đó start server django lên bằng lệnh:
 Sẽ đọc all data from file khoa-hoc.json rồi insert vào index articles của ES(Data get được rất nhiều khoảng 55691 record nên file json load không nỗi nên em chỉ lấy 2268 record trong https://vnexpress.net/khoa-hoc để test)
 
 ####
-http://localhost:8000/api/insertAllDataFromJSON
-    - Method Get
+- http://localhost:8000/api/insertAllDataFromJSON
+	- Method Get
 
 ####
-http://localhost:8000/api/createDataArticles 
+- http://localhost:8000/api/createDataArticles 
 	- Method Post:
 	- Data Post:	{
-					"title": "Vụ va chạm thiên hà tạo ra 'bóng ma' vũ trụ",
-					"content": "phuong create",
-					"public_date": "Thứ năm, 31/10/2019, 00:00 (GMT+7)",
-					"id": 1
-				}
+				"title": "Vụ va chạm thiên hà tạo ra 'bóng ma' vũ trụ",
+				"content": "phuong create",
+				"public_date": "Thứ năm, 31/10/2019, 00:00 (GMT+7)",
+				"id": 1
+			}
 
 ####
-http://localhost:8000/api/readDataArticles 
+- http://localhost:8000/api/readDataArticles 
 	- Method Post:
 	- Data Post: 	{
 					"id": 111
 				}	
 
 ####
-http://localhost:8000/api/readManyDataArticles  
+- http://localhost:8000/api/readManyDataArticles  
 	- Method Post:
 	- Data Post: [
 					{
@@ -51,11 +51,11 @@ http://localhost:8000/api/readManyDataArticles
 				]
 
 ####
-http://localhost:8000/api/readAllDataArticles 
+- http://localhost:8000/api/readAllDataArticles 
 	- Method Get
 
 ####
-http://localhost:8000/api/updateDataArticles  
+- http://localhost:8000/api/updateDataArticles  
 	- Method Post:
 	- Data Post:	{
 					"title": "Vụ va chạm thiên hà tạo ra 'bóng ma' vũ trụ",
@@ -65,14 +65,14 @@ http://localhost:8000/api/updateDataArticles
 				}
 			
 ####			
-http://localhost:8000/api/deleteDataArticles   
+- http://localhost:8000/api/deleteDataArticles   
 	- Method Post:
 	- Data Post:	{
 					"id": 1
 				} 
 				
 ####				
-http://localhost:8000/api/deleteManyDataArticles
+- http://localhost:8000/api/deleteManyDataArticles
 	- Method Post:
 	- Data Post: 	[
 					{
@@ -85,7 +85,7 @@ http://localhost:8000/api/deleteManyDataArticles
 
 ####
 Về search thì có thể tryền đủ data 3 property hoặc 1 trong 3 điều được		
-http://localhost:8000/api/searchDataArticles
+- http://localhost:8000/api/searchDataArticles
 	- Method Post:
 	- Data Post: 	{
 					"title": "Vụ va chạm thiên hà tạo ra 'bóng ma' vũ trụ",
