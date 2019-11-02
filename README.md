@@ -16,7 +16,7 @@ Sẽ đọc all data from file khoa-hoc.json rồi insert vào index articles c�
 
 
 http://localhost:8000/api/insertAllDataFromJSON
-	Method Get
+    Method Get
 	
 http://localhost:8000/api/createDataArticles 
 	Method Post:
