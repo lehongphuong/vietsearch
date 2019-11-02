@@ -10,9 +10,9 @@ Em làm bằng scrapy. project ở trong thư mục khoahoc. Vì tất cả data
 ## Bài 5, 6
 Em làm trong 2 thư mục mydatabaseES chứa database, em settup Elasticsearch bằng docker composer cho nhanh nên anh chỉ cần vào thư mục đó chạy docker-composer up là được
 Còn api thì em làm bằng django framework có thể chạy bằng docker composer hoặc bình thường cũng được. Chạy bình thường anh cần install các thư viện của nó bằng cách chạy lệnh sau:
-######    pip install -r requirements.txt
+######    `pip install -r requirements.txt`
 Sau đó start server django lên bằng lệnh: 
-######    python manage.py runserver
+######    `python manage.py runserver`
 
 ## Và anh có thể test các api với thông tin như sau:
 Sẽ đọc all data from file khoa-hoc.json rồi insert vào index articles của ES(Data get được rất nhiều khoảng 55691 record nên file json load không nỗi nên em chỉ lấy 2268 record trong https://vnexpress.net/khoa-hoc để test)
