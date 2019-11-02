@@ -13,10 +13,12 @@ Sau đó start server django lên bằng lệnh:
 
 =>>>>> Và anh có thể test các api với thông tin như sau:
 Sẽ đọc all data from file khoa-hoc.json rồi insert vào index articles của ES(Data get được rất nhiều khoảng 55691 record nên file json load không nỗi nên em chỉ lấy 2268 record trong https://vnexpress.net/khoa-hoc để test)
-insertAllDataFromJSON
+
+
+http://localhost:8000/api/insertAllDataFromJSON
 	Method Get
 	
-createDataArticles 
+http://localhost:8000/api/createDataArticles 
 	Method Post:
 	Data Post:	{
 					"title": "Vụ va chạm thiên hà tạo ra 'bóng ma' vũ trụ",
@@ -25,13 +27,13 @@ createDataArticles
 					"id": 1
 				}
 				
-readDataArticles 
+http://localhost:8000/api/readDataArticles 
 	Method Post:
 	Data Post: 	{
 					"id": 111
 				}	
 	
-readManyDataArticles  
+http://localhost:8000/api/readManyDataArticles  
 	Method Post:
 	Data Post: [
 					{
@@ -42,10 +44,10 @@ readManyDataArticles
 					}
 				]
 	
-readAllDataArticles 
+http://localhost:8000/api/readAllDataArticles 
 	Method Get
 	
-updateDataArticles  
+http://localhost:8000/api/updateDataArticles  
 	Method Post:
 	Data Post:	{
 					"title": "Vụ va chạm thiên hà tạo ra 'bóng ma' vũ trụ",
@@ -53,12 +55,12 @@ updateDataArticles
 					"public_date": "Thứ năm, 31/10/2019, 00:00 (GMT+7)",
 					"id": 1
 				}
-deleteDataArticles   
+http://localhost:8000/api/deleteDataArticles   
 	Method Post:
 	Data Post:	{
 					"id": 1
 				} 
-deleteManyDataArticles
+http://localhost:8000/api/deleteManyDataArticles
 	Method Post:
 	Data Post: 	[
 					{
@@ -70,7 +72,7 @@ deleteManyDataArticles
 				]
 
 Về search thì có thể tryền đủ data 3 property hoặc 1 trong 3 điều được		
-searchDataArticles
+http://localhost:8000/api/searchDataArticles
 	Method Post:
 	Data Post: 	{
 					"title": "Vụ va chạm thiên hà tạo ra 'bóng ma' vũ trụ",
