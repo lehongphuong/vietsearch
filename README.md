@@ -9,7 +9,7 @@ Em làm bằng scrapy. project ở trong thư mục khoahoc. Vì tất cả data
 
 ## Bài 5, 6
 Em làm trong 2 thư mục `mydatabaseES` chứa database, em settup Elasticsearch bằng docker composer cho nhanh nên anh chỉ cần vào thư mục đó chạy `docker-composer up` là được
-Còn api thì em làm bằng django framework nó ở thư mục `backend` có thể chạy bằng docker composer hoặc bình thường cũng được. Chạy bình thường anh cần install các thư viện của nó bằng cách chạy lệnh sau:
+Còn api thì em làm bằng django framework nó ở thư mục `backend-api` có thể chạy bằng docker composer hoặc bình thường cũng được. Chạy bình thường anh cần install các thư viện của nó bằng cách chạy lệnh sau:
 ######    `pip install -r requirements.txt`
 Sau đó start server django lên bằng lệnh: 
 ######    `python manage.py runserver`
